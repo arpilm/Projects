@@ -179,5 +179,4 @@ where comment_text is not null) as cd;
 SELECT username,comment_text
 				FROM users
 				LEFT JOIN comments ON users.id = comments.user_id
-
 				HAVING comment_text IS NOT NULL;
